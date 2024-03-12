@@ -1,0 +1,37 @@
+{
+  "name": "genstack",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "commit": "cz",
+    "prepare": "husky",
+    "release": "semantic-release --no-ci",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@types/bun": "latest",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "semantic-release": "^23.0.2",
+    "turbo": "latest"
+  },
+  "packageManager": "bun@1.0.29",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
