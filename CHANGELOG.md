@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/iamswat/genstack/compare/v1.0.0...v1.1.0) (2024-03-16)
+
+
+### Features
+
+* **routes:** basic routes added, swagger and logger implemented ([f220d41](https://github.com/iamswat/genstack/commit/f220d41d96493652985f58f9585549d032057f08))
+
 # 1.0.0 (2024-03-16)
 
 
