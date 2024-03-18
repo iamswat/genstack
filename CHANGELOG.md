@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/iamswat/genstack/compare/v1.1.0...v1.2.0) (2024-03-18)
+
+
+### Features
+
+* **changelog:** changelog modified: this is a "feature" for test purpose ([23e9d06](https://github.com/iamswat/genstack/commit/23e9d066e9b59e23d87a46aaf69d66d40a890435))
+
 # [1.1.0](https://github.com/iamswat/genstack/compare/v1.0.0...v1.1.0) (2024-03-16)
 
 
