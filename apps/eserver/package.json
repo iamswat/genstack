@@ -5,10 +5,11 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "@bogeychan/elysia-logger": "^0.0.17",
-    "@elysiajs/swagger": "^0.8.5",
-    "elysia": "^0.8.17",
-    "pino-pretty": "^10.3.1"
+    "@bogeychan/elysia-logger": "^0.0.19",
+    "@elysiajs/static": "^1.0.2",
+    "@elysiajs/swagger": "^1.0.3",
+    "elysia": "^1.0.7",
+    "pino-pretty": "^11.0.0"
   },
   "devDependencies": {
     "bun-types": "latest"

@@ -1,14 +1,16 @@
 import { Elysia } from "elysia";
-import { PORT } from "@gen/env";
+import { APPLICATION_NAME, PORT } from "@gen/env";
 import { errorConfig } from "./config/error.config";
 import { swaggerConfig } from "./config/swagger.config";
 import { logger } from "@bogeychan/elysia-logger";
 import { output, pinoTransportOptions } from "./config/logger.config";
 import { zDefaultResponse, zDefaultResponseType } from "./dto/common.dto";
 import { basicController } from "./controllers/basic.controller";
+import staticPlugin from "@elysiajs/static";
 
-const app: Elysia = new Elysia();
+const app: Elysia = new Elysia({ name: APPLICATION_NAME });
 
+app.use(staticPlugin({ prefix: "/" }));
 app.use(errorConfig);
 app.use(swaggerConfig);
 app.use(

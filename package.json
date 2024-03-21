@@ -1,6 +1,5 @@
 {
   "name": "genstack",
-  "module": "index.ts",
   "type": "module",
   "private": true,
   "version": "1.2.0",
@@ -14,20 +13,20 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.3",
-    "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/commit-analyzer": "^12.0.0",
     "@semantic-release/npm": "^12.0.0",
     "@types/bun": "latest",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.0.11",
     "prettier": "^3.2.5",
-    "semantic-release": "^23.0.2",
+    "semantic-release": "^23.0.5",
     "turbo": "latest"
   },
-  "packageManager": "bun@1.0.31",
+  "packageManager": "bun@1.0.33",
   "workspaces": [
     "apps/*",
     "libs/*"
