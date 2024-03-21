@@ -2,7 +2,7 @@
   "name": "genstack",
   "type": "module",
   "private": true,
-  "version": "1.2.0",
+  "version": "1.0.0",
   "scripts": {
     "commit": "cz",
     "prepare": "husky",
