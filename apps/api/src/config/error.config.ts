@@ -4,8 +4,8 @@ import { DEPLOY, DEPLOY_ENVIRONMENT } from "@gen/env";
 
 export const errorConfig = new Elysia();
 
-errorConfig.onError({ as: "global" }, ({ code, error, request: { url, method } }) => {
-	output.error({ method: method, path: url, message: error.message });
+errorConfig.onError({ as: "global" }, ({ code, error, path, request: { url, method } }) => {
+	if (path !== "/favicon.ico") output.error({ error: { method: method, path: url, message: error.message } });
 	let outputMessage;
 	try {
 		outputMessage = JSON.parse(error.message);
