@@ -27,9 +27,6 @@ basicController.post(
 			name: t.String(),
 			age: t.Number(),
 		}),
-		// headers: t.Object({
-		// 	name: t.String(),
-		// }),
 		response: zBasicResponse,
 		type: "application/json",
 		detail: { tags: [swaggerTagNames.basic] },
